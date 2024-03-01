@@ -2,6 +2,7 @@
 import { Header } from "./components/Header";
 import { TaskList } from "./components/TaskList";
 import "./App.css";
+import { Footer } from "./components/Footer";
 
 export default function App() {
 
@@ -11,6 +12,7 @@ export default function App() {
         <div className="App">
             <Header />
             <TaskList concept={concept} />
+            <Footer />
         </div>
     );
 
