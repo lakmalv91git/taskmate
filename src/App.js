@@ -3,15 +3,18 @@ import { Header } from "./components/Header";
 import { TaskList } from "./components/TaskList";
 import "./App.css";
 import { Footer } from "./components/Footer";
+import { AddTask } from "./components/AddTask";
+import { useState } from "react";
 
 export default function App() {
 
-    const concept = "Prop Drilling";
+    const [tasks, setTasks] = useState([]);
 
     return (
         <div className="App">
             <Header />
-            <TaskList concept={concept} />
+            <AddTask tasks={tasks} setTasks={setTasks} />
+            <TaskList  tasks={tasks} setTasks={setTasks}  />
             <Footer />
         </div>
     );
