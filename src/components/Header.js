@@ -1,5 +1,4 @@
 import LOGO from "../assets/logo192.png"
-import "../App.css";
 import "./Header.css";
 
 export const Header = () => {
